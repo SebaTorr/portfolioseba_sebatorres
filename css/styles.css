@@ -1,0 +1,238 @@
+/**Fonts**/
+@font-face {
+  font-family: 'RobotoSlabRegular';
+  src: url(../fonts/roboto-slab/RobotoSlab-Regular.ttf); }
+
+@font-face {
+  font-family: 'RobotoSlabBold';
+  src: url(../fonts/roboto-slab/RobotoSlab-Bold.ttf); }
+
+@font-face {
+  font-family: 'SocialMediaFont';
+  src: url(../fonts/social_media_circled/Social-Media-Circled.otf); }
+
+@font-face {
+  font-family: 'BebasFont';
+  src: url(../fonts/bebas_neue/BebasNeue-Regular.ttf); }
+
+/**Estilos_Generales**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  background-color: #1d1c1c; }
+
+/**index header**/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeded;
+  background-image: url(../img/pattern.png);
+  padding: 1rem 0; }
+  header .logo {
+    padding-right: 3rem;
+    font-family: 'CocoFont';
+    font-size: 2rem; }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header nav ul li a {
+      font-size: 1.3rem;
+      font-family: 'RobotoSlabBold';
+      color: black;
+      transition: 0.2s; }
+      header nav ul li a:hover {
+        color: #c72fdb; }
+  header .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SocialMediaFont';
+    font-size: 1.7rem;
+    padding-left: 2.5rem; }
+    header .redes li a {
+      color: #c72fdb;
+      transition: 0.2s; }
+      header .redes li a:hover {
+        color: black; }
+  header li {
+    padding: 0 0.5rem; }
+
+/**index section-portada**/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0; }
+  main #portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 70vh;
+    width: 85%; }
+    main #portada .tituloPrincipal {
+      background-color: transparent;
+      width: 55%;
+      height: 90%; }
+      main #portada .tituloPrincipal h1 {
+        color: black;
+        margin-top: 1.5rem;
+        margin-left: 1rem; }
+        main #portada .tituloPrincipal h1 .saludoText {
+          font-family: 'RobotoSlabBold';
+          font-size: 2.5rem;
+          color: #2bd4eb; }
+        main #portada .tituloPrincipal h1 .nombreText {
+          font-family: 'RobotoSlabBold';
+          font-size: 2.5rem;
+          color: white; }
+        main #portada .tituloPrincipal h1 .devText {
+          font-family: 'RobotoSlabRegular';
+          font-size: 3rem;
+          color: #2bd4eb; }
+          main #portada .tituloPrincipal h1 .devText span {
+            color: black;
+            animation-name: cursor_late;
+            animation-iteration-count: infinite;
+            animation-duration: 1s; }
+      main #portada .tituloPrincipal .iconsDev {
+        margin-top: 1.5rem;
+        margin-left: 1rem; }
+        main #portada .tituloPrincipal .iconsDev img {
+          padding-right: 1rem; }
+      main #portada .tituloPrincipal .contactoText {
+        width: 2%;
+        background-color: #2bd4eb;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        transition: all 0.5s; }
+        main #portada .tituloPrincipal .contactoText span {
+          color: white;
+          margin-left: 1.2rem;
+          font-family: 'RobotoSlabBold';
+          font-size: 1.5rem; }
+        main #portada .tituloPrincipal .contactoText:hover {
+          background: #c72fdb;
+          width: 27%; }
+          main #portada .tituloPrincipal .contactoText:hover span {
+            color: black; }
+    main #portada .resumenPortada {
+      background-color: #2bd4eb;
+      box-shadow: 2px 3px #6d4677;
+      width: 40%;
+      height: 90%;
+      margin-left: 0.5rem;
+      padding-top: 1.5rem;
+      padding-left: 1.2rem; }
+      main #portada .resumenPortada .subtitulo {
+        font-size: 2rem;
+        font-family: 'RobotoSlabRegular';
+        color: black; }
+      main #portada .resumenPortada p {
+        font-family: 'RobotoSlabRegular';
+        font-size: 1.2rem; }
+  main #trabajosHome {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    height: 100%;
+    width: 85%;
+    margin-top: 2rem;
+    padding-bottom: 2rem; }
+    main #trabajosHome h2 {
+      font-family: 'RobotoSlabBold';
+      font-size: 2.5rem;
+      color: #c72fdb;
+      margin-left: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; }
+    main #trabajosHome .containerCards {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      grid-template-columns: 22% 22% 22% 22%;
+      grid-template-rows: 45vh;
+      grid-column-gap: 1.5rem;
+      margin-top: 1rem; }
+      main #trabajosHome .containerCards .tarjetas {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 60% 20%;
+        background: #c72fdb;
+        width: 100%;
+        transition: 100ms; }
+        main #trabajosHome .containerCards .tarjetas:hover {
+          transform: scale(1.05, 1.05);
+          background: #f7f0f0;
+          background-image: url(../img/pattern.png); }
+          main #trabajosHome .containerCards .tarjetas:hover h2 {
+            color: black; }
+          main #trabajosHome .containerCards .tarjetas:hover a {
+            background: rgba(199, 47, 219, 0.5); }
+        main #trabajosHome .containerCards .tarjetas h2 {
+          color: black;
+          font-size: 1.5rem;
+          margin-right: 1.5rem;
+          margin-bottom: 1rem; }
+        main #trabajosHome .containerCards .tarjetas a {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin-top: 0.8rem;
+          margin-right: 0.8rem; }
+          main #trabajosHome .containerCards .tarjetas a h3 {
+            font-family: 'RobotoSlabBold';
+            font-size: 1.1rem;
+            color: black;
+            margin-right: 0.2rem; }
+        main #trabajosHome .containerCards .tarjetas div {
+          margin-left: 1.5rem; }
+      main #trabajosHome .containerCards .tarjetasDos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 60% 20%;
+        background: #2bd4eb;
+        width: 100%;
+        transition: 100ms; }
+        main #trabajosHome .containerCards .tarjetasDos:hover {
+          transform: scale(1.05, 1.05);
+          background: #f7f0f0;
+          background-image: url(../img/pattern.png); }
+          main #trabajosHome .containerCards .tarjetasDos:hover h2 {
+            color: black; }
+          main #trabajosHome .containerCards .tarjetasDos:hover a {
+            background: rgba(43, 213, 235, 0.5); }
+        main #trabajosHome .containerCards .tarjetasDos h2 {
+          color: black;
+          font-size: 1.5rem;
+          margin-right: 1.5rem;
+          margin-bottom: 1rem; }
+        main #trabajosHome .containerCards .tarjetasDos a {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin-top: 0.8rem;
+          margin-right: 0.8rem; }
+          main #trabajosHome .containerCards .tarjetasDos a h3 {
+            font-family: 'RobotoSlabBold';
+            font-size: 1.1rem;
+            color: black;
+            margin-right: 0.2rem; }
+        main #trabajosHome .containerCards .tarjetasDos div {
+          margin-left: 1.5rem; }
+
+@keyframes cursor_late {
+  0% {
+    color: transparent; }
+  50% {
+    color: white; }
+  100% {
+    color: transparent; } }

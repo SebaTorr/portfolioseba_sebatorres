@@ -1,0 +1,330 @@
+/**Fonts**/
+@import "fonts";
+@import "myvariables";
+
+/**Estilos_Generales**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+}
+
+/**index header**/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 237, 237);
+    background-image: url(../img/pattern.png);
+    padding: 1rem 0;
+
+    .logo {
+        padding-right: 3rem;
+        font-family: 'CocoFont';
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li a {
+            font-size: 1.3rem;
+            font-family: 'RobotoSlabBold';
+            color: black;
+            transition: 0.2s;
+            
+            &:hover {
+                color: rgb(199, 47, 219);
+            }
+        }
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'SocialMediaFont';
+        font-size: 1.7rem;
+        padding-left: 2.5rem;
+
+        li a {
+            color: rgb(199, 47, 219);
+            transition: 0.2s;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    li {
+        padding: 0 0.5rem;
+    }
+}
+
+/**index section-portada**/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
+    #portada {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        height: 70vh;
+        width: 85%;
+
+        .tituloPrincipal {
+            background-color: transparent;
+            width: 55%;
+            height: 90%;
+            
+            h1 {
+                color: black;
+                margin-top: 1.5rem;
+                margin-left: 1rem;
+
+                .saludoText {
+                    font-family: 'RobotoSlabBold';
+                    font-size: 2.5rem;
+                    color: rgb(43, 212, 235);
+                }
+
+                .nombreText {
+                    font-family: 'RobotoSlabBold';
+                    font-size: 2.5rem;
+                    color: white;
+                }
+
+                .devText {
+                    font-family: 'RobotoSlabRegular';
+                    font-size: 3rem;
+                    color: rgb(43, 212, 235);
+
+                    span {
+                        color: black;
+                        animation-name: cursor_late;
+                        animation-iteration-count: infinite;
+                        animation-duration: 1s;
+                    }
+                }
+            }
+
+            .iconsDev {
+                margin-top: 1.5rem;
+                margin-left: 1rem;
+
+                img {
+                    padding-right: 1rem;
+
+                }
+            }
+
+            .contactoText {
+                width: 2%;
+                background-color: rgb(43, 212, 235);
+                margin-top: 3rem;
+                margin-left: 1rem;
+                transition: all 0.5s;
+
+                span {
+                    color: white;
+                    margin-left: 1.2rem;
+                    font-family: 'RobotoSlabBold';
+                    font-size: 1.5rem;
+                }
+
+                &:hover {
+                    background:rgb(199, 47, 219);
+                    width: 27%;
+                    
+                    span {
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .resumenPortada {
+            background-color: rgb(43, 212, 235);
+            box-shadow: 2px 3px rgb(109, 70, 119);
+            width: 40%;
+            height: 90%;
+            margin-left: 0.5rem;
+            padding-top: 1.5rem;
+            padding-left: 1.2rem;
+
+            .subtitulo {
+                font-size: 2rem;
+                font-family: 'RobotoSlabRegular';
+                color: black;
+            }
+
+            p {
+                font-family: 'RobotoSlabRegular';
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+
+    #trabajosHome {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        height: 100%;
+        width: 85%;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+        h2 {
+            font-family: 'RobotoSlabBold';
+            font-size: 2.5rem;
+            color: rgb(199, 47, 219);
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .containerCards {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            grid-template-columns: 22% 22% 22% 22%;
+            grid-template-rows: 45vh;
+            grid-column-gap: 1.5rem;
+            margin-top: 1rem;
+
+            .tarjetas {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 20% 60% 20%;
+                background: rgb(199, 47, 219);
+                width: 100%;
+                transition: 100ms;
+
+                &:hover {
+                    transform: scale(1.05, 1.05);
+                    background:rgb(247, 240, 240);
+                    background-image: url(../img/pattern.png);
+
+                    h2 {
+                        color: black;
+                    }
+
+                    a {
+                        background: rgba(199, 47, 219, 0.5);
+
+                    }
+
+                }
+
+                h2 {
+                    color: black;
+                    font-size: 1.5rem;
+                    margin-right: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    margin-top: 0.8rem;
+                    margin-right: 0.8rem;
+
+                   h3 {
+                        font-family: 'RobotoSlabBold';
+                        font-size: 1.1rem;
+                        color: black;
+                        margin-right: 0.2rem;
+                    }
+
+                }
+
+                div {
+                    margin-left: 1.5rem;
+                }
+            }
+
+            .tarjetasDos {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 20% 60% 20%;
+                background: rgb(43, 212, 235);
+                width: 100%;
+                transition: 100ms;
+
+                &:hover {
+                    transform: scale(1.05, 1.05);
+                    background:rgb(247, 240, 240);
+                    background-image: url(../img/pattern.png);
+
+                    h2 {
+                        color: black;
+                    }
+
+                    a {
+                        background: rgba(43, 213, 235, 0.5);
+                    }
+
+                }
+
+                h2 {
+                    color: black;
+                    font-size: 1.5rem;
+                    margin-right: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    margin-top: 0.8rem;
+                    margin-right: 0.8rem;
+
+                    h3 {
+                        font-family: 'RobotoSlabBold';
+                        font-size: 1.1rem;
+                        color: black;
+                        margin-right: 0.2rem;
+                    }
+                }
+
+                div {
+                    margin-left: 1.5rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+@keyframes cursor_late {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: transparent;
+    }
+
+}
